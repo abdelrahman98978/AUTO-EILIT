@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="إنشاء حساب جديد - معرض أوتو إليت للسيارات الفاخرة">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>إنشاء حساب جديد - معرض السيارات الفاخرة</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>أوتو إليت</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#about">من نحن</a></li>
+                <li><a href="index.html#cars">معرض السيارات</a></li>
+                <li><a href="index.html#services">خدماتنا</a></li>
+                <li><a href="index.html#testimonials">آراء العملاء</a></li>
+                <li><a href="index.html#contact">اتصل بنا</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- قسم إنشاء حساب جديد -->
+    <section class="login-section register-section">
+        <div class="container">
+            <div class="login-container">
+                <h2>إنشاء حساب جديد</h2>
+                <div class="login-form">
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="fullname">الاسم الكامل</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">كلمة المرور</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">تأكيد كلمة المرور</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <div class="form-group terms">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">أوافق على <a href="#">الشروط والأحكام</a> و <a href="#">سياسة الخصوصية</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إنشاء حساب</button>
+                    </form>
+                </div>
+                
+                <div class="social-login">
+                    <p>أو إنشاء حساب باستخدام</p>
+                    <div class="social-buttons">
+                        <button class="social-btn google-btn">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button class="social-btn facebook-btn">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </button>
+                        <button class="social-btn linkedin-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </button>
+                        <button class="social-btn apple-btn">
+                            <i class="fab fa-apple"></i>
+                            <span>Apple</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="register-link">
+                    <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>أوتو إليت</h2>
+                    <p>معرض السيارات الفاخرة الأول في المنطقة</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#about">من نحن</a></li>
+                        <li><a href="index.html#cars">معرض السيارات</a></li>
+                        <li><a href="index.html#services">خدماتنا</a></li>
+                        <li><a href="index.html#testimonials">آراء العملاء</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> شارع الملك فهد، الرياض، المملكة العربية السعودية</p>
+                    <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@autoelite.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 أوتو إليت. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

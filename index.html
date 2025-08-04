@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="معرض أوتو إليت للسيارات الفاخرة - أفضل معرض لبيع وشراء السيارات الفاخرة والرياضية">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>معرض السيارات الفاخرة</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1 id="logo-text">أوتو إليت</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="#about" data-ar="من نحن" data-en="About">من نحن</a></li>
+                <li><a href="#cars" data-ar="معرض السيارات" data-en="Cars Gallery">معرض السيارات</a></li>
+                <li><a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+                <li><a href="#testimonials" data-ar="آراء العملاء" data-en="Testimonials">آراء العملاء</a></li>
+                <li><a href="#contact" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li>
+            </ul>
+            <div class="language-toggle">
+                <button id="lang-toggle" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="lang-text">EN</span>
+                </button>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- قسم الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title" data-ar="أفخم السيارات بأفضل الأسعار" data-en="Luxury Cars at Best Prices">أفخم السيارات بأفضل الأسعار</h1>
+            <p id="hero-subtitle" data-ar="اكتشف مجموعتنا الحصرية من السيارات الفاخرة والرياضية" data-en="Discover our exclusive collection of luxury and sports cars">اكتشف مجموعتنا الحصرية من السيارات الفاخرة والرياضية</p>
+            <div class="hero-buttons">
+                <a href="#cars" class="btn btn-primary" id="browse-cars-btn" data-ar="استعرض السيارات" data-en="Browse Cars">استعرض السيارات</a>
+                <a href="#contact" class="btn btn-secondary" id="contact-btn" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">من نحن</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/showroom.jpg" alt="معرض السيارات" class="placeholder-image">
+                </div>
+                <div class="about-text">
+                    <h3>معرض أوتو إليت للسيارات الفاخرة</h3>
+                    <p>نحن معرض متخصص في بيع وشراء السيارات الفاخرة والرياضية من أشهر العلامات التجارية العالمية. نقدم لعملائنا تجربة فريدة من نوعها مع مجموعة متنوعة من الخيارات التي تناسب جميع الأذواق.</p>
+                    <p>تأسس معرضنا منذ أكثر من 15 عاماً، ونفتخر بتقديم أعلى مستويات الخدمة والجودة لعملائنا الكرام.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-car"></i>
+                            <h4>سيارات فاخرة</h4>
+                            <p>نوفر أحدث موديلات السيارات الفاخرة</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tools"></i>
+                            <h4>صيانة متكاملة</h4>
+                            <p>خدمات صيانة على أعلى مستوى</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <h4>ضمان شامل</h4>
+                            <p>نقدم ضمان شامل على جميع سياراتنا</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض السيارات -->
+    <section id="cars" class="cars-section">
+        <div class="container">
+            <h2 class="section-title">معرض السيارات</h2>
+            <div class="car-filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="luxury">فاخرة</button>
+                <button class="filter-btn" data-filter="sports">رياضية</button>
+                <button class="filter-btn" data-filter="suv">دفع رباعي</button>
+            </div>
+            <div class="cars-grid">
+                <!-- سيارة 1 -->
+                <div class="car-card" data-category="luxury">
+                    <div class="car-image">
+                        <img src="images/car1.jpg" alt="مرسيدس S-Class" class="placeholder-image">
+                        <div class="car-tag">فاخرة</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>مرسيدس S-Class</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                        </div>
+                        <div class="car-price">750,000 ريال</div>
+                        <a href="#contact" class="btn btn-primary btn-sm">استفسار</a>
+                    </div>
+                </div>
+                <!-- سيارة 2 -->
+                <div class="car-card" data-category="sports">
+                    <div class="car-image">
+                        <img src="images/car2.jpg" alt="بورش 911" class="placeholder-image">
+                        <div class="car-tag">رياضية</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>بورش 911</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                        </div>
+                        <div class="car-price">850,000 ريال</div>
+                        <a href="#contact" class="btn btn-primary btn-sm">استفسار</a>
+                    </div>
+                </div>
+                <!-- سيارة 3 -->
+                <div class="car-card" data-category="suv">
+                    <div class="car-image">
+                        <img src="images/car3.jpg" alt="رينج روفر" class="placeholder-image">
+                        <div class="car-tag">دفع رباعي</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>رينج روفر</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                        </div>
+                        <div class="car-price">650,000 ريال</div>
+                        <a href="#contact" class="btn btn-primary btn-sm">استفسار</a>
+                    </div>
+                </div>
+                <!-- سيارة 4 -->
+                <div class="car-card" data-category="luxury">
+                    <div class="car-image">
+                        <img src="images/car4.jpg" alt="بي إم دبليو الفئة السابعة" class="placeholder-image">
+                        <div class="car-tag">فاخرة</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>بي إم دبليو الفئة السابعة</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                        </div>
+                        <div class="car-price">700,000 ريال</div>
+                        <a href="#contact" class="btn btn-primary btn-sm">استفسار</a>
+                    </div>
+                </div>
+                <!-- سيارة 5 -->
+                <div class="car-card" data-category="sports">
+                    <div class="car-image">
+                        <img src="images/car5.jpg" alt="فيراري 488" class="placeholder-image">
+                        <div class="car-tag">رياضية</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>فيراري 488</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                        </div>
+                        <div class="car-price">1,200,000 ريال</div>
+                        <a href="#contact" class="btn btn-primary btn-sm">استفسار</a>
+                    </div>
+                </div>
+                <!-- سيارة 6 -->
+                <div class="car-card" data-category="suv">
+                    <div class="car-image">
+                        <img src="images/car6.jpg" alt="لكزس LX" class="placeholder-image">
+                        <div class="car-tag">دفع رباعي</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>لكزس LX</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 0 كم</span>
+                            <span><i class="fas fa-gas-pump"></i> بنزين</span>
+                        </div>
+                        <div class="car-price">550,000 ريال</div>
+                        <a href="#contact" class="btn btn-primary btn-sm">استفسار</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#" class="btn btn-secondary">عرض المزيد من السيارات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>بيع وشراء السيارات</h3>
+                    <p>نوفر خدمة بيع وشراء السيارات الفاخرة والرياضية بأفضل الأسعار وبضمان كامل.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>الصيانة الدورية</h3>
+                    <p>نقدم خدمات الصيانة الدورية للسيارات على أيدي فنيين محترفين باستخدام أحدث التقنيات.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>التمويل والتقسيط</h3>
+                    <p>نوفر حلول تمويلية متنوعة بالتعاون مع أفضل البنوك المحلية وبأقل نسبة فائدة.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>استبدال السيارات</h3>
+                    <p>خدمة استبدال سيارتك القديمة بأخرى جديدة مع إمكانية دفع الفارق بالتقسيط.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>التأمين الشامل</h3>
+                    <p>نقدم خدمة التأمين الشامل على السيارات بالتعاون مع أفضل شركات التأمين.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>خدمة النقل</h3>
+                    <p>نوفر خدمة نقل السيارات إلى جميع مناطق المملكة بأمان تام وبأسعار تنافسية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">آراء عملائنا</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/client1.jpg" alt="العميل" class="placeholder-image">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"تجربة رائعة مع معرض أوتو إليت، حصلت على سيارة أحلامي بسعر مناسب وخدمة ممتازة. أنصح الجميع بالتعامل معهم."</p>
+                        <h4 class="client-name">أحمد محمد</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/client2.jpg" alt="العميل" class="placeholder-image">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"فريق عمل محترف ومتعاون، قدموا لي كل المساعدة لاختيار السيارة المناسبة وتسهيلات في الدفع. شكراً لكم."</p>
+                        <h4 class="client-name">سارة عبدالله</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/client3.jpg" alt="العميل" class="placeholder-image">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"خدمة ما بعد البيع ممتازة، استجابة سريعة لأي استفسار وصيانة دورية على أعلى مستوى. سعيد جداً بالتعامل معهم."</p>
+                        <h4 class="client-name">خالد العتيبي</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>العنوان</h3>
+                        <p>طريق الملك فهد، حي الياسمين، الرياض، المملكة العربية السعودية</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>رقم الهاتف</h3>
+                        <p>+966 12 345 6789</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>البريد الإلكتروني</h3>
+                        <p>info@autoelite.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>ساعات العمل</h3>
+                        <p>السبت - الخميس: 9:00 صباحاً - 9:00 مساءً</p>
+                        <p>الجمعة: 4:00 عصراً - 9:00 مساءً</p>
+                    </div>
+                    <div class="social-media">
+                        <h3>تابعنا على</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-snapchat-ghost"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>ارسل لنا رسالة</h3>
+                    <form id="inquiry-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="" disabled selected>نوع الاستفسار</option>
+                                <option value="purchase">شراء سيارة</option>
+                                <option value="sell">بيع سيارة</option>
+                                <option value="service">خدمة الصيانة</option>
+                                <option value="finance">استفسار عن التمويل</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.674457217312!2d46.6700283!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ5LjAiTiA0NsKwNDAnMTIuMSJF!5e0!3m2!1sen!2ssa!4v1628000000000!5m2!1sen!2ssa" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>أوتو إليت</h2>
+                    <p>معرض السيارات الفاخرة</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#cars">معرض السيارات</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#testimonials">آراء العملاء</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>النشرة البريدية</h3>
+                    <p>اشترك في نشرتنا البريدية للحصول على آخر العروض والأخبار</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="البريد الإلكتروني" required>
+                        <button type="submit" class="btn btn-primary">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 أوتو إليت - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ملف جافا سكريبت -->
+    <!-- Widget Configuration -->
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'https://whole-central-magpie.ngrok-free.app/webhook/791e6115-7713-4369-bb22-346316374b29/chat',
+                route: 'general'
+            },
+            branding: {
+                logo: 'images/favicon.svg',
+                name: 'أوتو إليت', // Your company name
+                welcomeText: 'مرحباً 👋، كيف يمكننا مساعدتك؟', // Welcome message in Arabic
+                responseTimeText: 'نحن نرد عادة في الحال' // Response time message in Arabic
+            },
+            style: {
+                primaryColor: '#1a1a2e', // Primary color matching website theme
+                secondaryColor: '#16213e', // Secondary color matching website theme
+                position: 'right', // Position on right side
+                backgroundColor: '#ffffff', // Background color of the chat widget
+                fontColor: '#333333' // Text color for messages and interface
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js"></script>
+    <!-- Widget Script -->
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

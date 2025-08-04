@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <!-- خلفية -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- أرضية المعرض -->
+  <rect x="50" y="350" width="700" height="100" fill="#ddd" />
+  <rect x="50" y="350" width="700" height="20" fill="#bbb" />
+  
+  <!-- جدران المعرض -->
+  <rect x="50" y="100" width="700" height="250" fill="#f1faee" />
+  
+  <!-- سقف المعرض -->
+  <path d="M0,100 L50,100 L50,350 L800,350 L800,100 L850,100 L425,20 Z" fill="#1d3557" opacity="0.8" />
+  
+  <!-- نوافذ زجاجية كبيرة -->
+  <rect x="100" y="150" width="600" height="150" fill="#a8dadc" opacity="0.5" />
+  <line x1="250" y1="150" x2="250" y2="300" stroke="#fff" stroke-width="2" />
+  <line x1="400" y1="150" x2="400" y2="300" stroke="#fff" stroke-width="2" />
+  <line x1="550" y1="150" x2="550" y2="300" stroke="#fff" stroke-width="2" />
+  
+  <!-- باب المعرض -->
+  <rect x="350" y="300" width="100" height="50" fill="#a8dadc" opacity="0.7" />
+  <rect x="395" y="325" width="10" height="5" fill="#e63946" />
+  
+  <!-- لافتة المعرض -->
+  <rect x="300" y="120" width="200" height="30" fill="#e63946" />
+  <text x="400" y="142" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" font-weight="bold">أوتو إليت</text>
+  
+  <!-- السيارات المعروضة -->
+  <!-- سيارة 1 -->
+  <g transform="translate(180, 320) scale(0.5)">
+    <path d="M-120,-20 C-100,-40 100,-40 120,-20 L140,0 C140,20 120,40 100,40 L-100,40 C-120,40 -140,20 -140,0 Z" fill="#e63946" />
+    <circle cx="-80" cy="40" r="20" fill="#333" />
+    <circle cx="80" cy="40" r="20" fill="#333" />
+  </g>
+  
+  <!-- سيارة 2 -->
+  <g transform="translate(400, 320) scale(0.5)">
+    <path d="M-130,-10 C-120,-25 -100,-30 -70,-30 L70,-30 C100,-30 120,-25 130,-10 L120,10 C110,30 90,35 70,35 L-70,35 C-90,35 -110,30 -120,10 Z" fill="#457b9d" />
+    <circle cx="-80" cy="35" r="20" fill="#333" />
+    <circle cx="80" cy="35" r="20" fill="#333" />
+  </g>
+  
+  <!-- سيارة 3 -->
+  <g transform="translate(620, 320) scale(0.5)">
+    <path d="M-130,-20 L-120,-50 L120,-50 L130,-20 L130,20 C130,30 120,40 110,40 L-110,40 C-120,40 -130,30 -130,20 Z" fill="#1d3557" />
+    <circle cx="-80" cy="40" r="25" fill="#333" />
+    <circle cx="80" cy="40" r="25" fill="#333" />
+  </g>
+  
+  <!-- أعمدة المعرض -->
+  <rect x="100" y="150" width="10" height="200" fill="#1d3557" />
+  <rect x="250" y="150" width="10" height="200" fill="#1d3557" />
+  <rect x="400" y="150" width="10" height="200" fill="#1d3557" />
+  <rect x="550" y="150" width="10" height="200" fill="#1d3557" />
+  <rect x="690" y="150" width="10" height="200" fill="#1d3557" />
+  
+  <!-- إضاءة المعرض -->
+  <circle cx="175" cy="150" r="10" fill="#ffdd00" opacity="0.8" />
+  <circle cx="325" cy="150" r="10" fill="#ffdd00" opacity="0.8" />
+  <circle cx="475" cy="150" r="10" fill="#ffdd00" opacity="0.8" />
+  <circle cx="625" cy="150" r="10" fill="#ffdd00" opacity="0.8" />
+  
+  <!-- انعكاسات الإضاءة على الأرضية -->
+  <ellipse cx="175" cy="350" rx="30" ry="10" fill="#ffdd00" opacity="0.2" />
+  <ellipse cx="325" cy="350" rx="30" ry="10" fill="#ffdd00" opacity="0.2" />
+  <ellipse cx="475" cy="350" rx="30" ry="10" fill="#ffdd00" opacity="0.2" />
+  <ellipse cx="625" cy="350" rx="30" ry="10" fill="#ffdd00" opacity="0.2" />
+  
+  <!-- أشخاص في المعرض -->
+  <!-- شخص 1 -->
+  <g transform="translate(250, 330)">
+    <circle cx="0" cy="-30" r="8" fill="#333" />
+    <line x1="0" y1="-22" x2="0" y2="0" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="-15" x2="-10" y2="-5" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="-15" x2="10" y2="-5" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="0" x2="-7" y2="15" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="0" x2="7" y2="15" stroke="#333" stroke-width="3" />
+  </g>
+  
+  <!-- شخص 2 -->
+  <g transform="translate(500, 330)">
+    <circle cx="0" cy="-30" r="8" fill="#333" />
+    <line x1="0" y1="-22" x2="0" y2="0" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="-15" x2="-12" y2="-10" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="-15" x2="12" y2="-10" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="0" x2="-7" y2="15" stroke="#333" stroke-width="3" />
+    <line x1="0" y1="0" x2="7" y2="15" stroke="#333" stroke-width="3" />
+  </g>
+  
+  <!-- نص المعلومات -->
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#1d3557" font-weight="bold">معرض أوتو إليت للسيارات الفاخرة</text>
+</svg>

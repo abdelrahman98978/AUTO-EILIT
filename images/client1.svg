@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- خلفية دائرية -->
+  <circle cx="100" cy="100" r="100" fill="#f1faee" />
+  
+  <!-- الوجه -->
+  <circle cx="100" cy="85" r="50" fill="#a8dadc" />
+  
+  <!-- العينان -->
+  <ellipse cx="80" cy="75" rx="5" ry="7" fill="#1d3557" />
+  <ellipse cx="120" cy="75" rx="5" ry="7" fill="#1d3557" />
+  
+  <!-- الحاجبان -->
+  <path d="M70,60 Q80,55 90,60" stroke="#1d3557" stroke-width="2" fill="none" />
+  <path d="M110,60 Q120,55 130,60" stroke="#1d3557" stroke-width="2" fill="none" />
+  
+  <!-- الأنف -->
+  <path d="M100,80 L95,95 L105,95 Z" fill="#1d3557" />
+  
+  <!-- الفم -->
+  <path d="M80,110 Q100,120 120,110" stroke="#1d3557" stroke-width="2" fill="none" />
+  
+  <!-- الشعر -->
+  <path d="M50,85 C50,35 150,35 150,85" fill="#1d3557" />
+  <path d="M50,85 C60,55 140,55 150,85" fill="#1d3557" />
+  
+  <!-- الرقبة -->
+  <rect x="85" y="135" width="30" height="20" fill="#a8dadc" />
+  
+  <!-- الملابس -->
+  <path d="M60,155 L85,135 L115,135 L140,155 L140,200 L60,200 Z" fill="#e63946" />
+  
+  <!-- تفاصيل الملابس -->
+  <rect x="95" y="135" width="10" height="65" fill="#1d3557" />
+  
+  <!-- نظارة -->
+  <circle cx="80" cy="75" r="12" stroke="#1d3557" stroke-width="2" fill="none" />
+  <circle cx="120" cy="75" r="12" stroke="#1d3557" stroke-width="2" fill="none" />
+  <line x1="92" y1="75" x2="108" y2="75" stroke="#1d3557" stroke-width="2" />
+  <line x1="68" y1="75" x2="60" y2="70" stroke="#1d3557" stroke-width="2" />
+  <line x1="132" y1="75" x2="140" y2="70" stroke="#1d3557" stroke-width="2" />
+</svg>

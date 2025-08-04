@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- خلفية دائرية -->
+  <circle cx="100" cy="100" r="100" fill="#f1faee" />
+  
+  <!-- الوجه -->
+  <circle cx="100" cy="85" r="50" fill="#a8dadc" />
+  
+  <!-- العينان -->
+  <ellipse cx="80" cy="75" rx="5" ry="7" fill="#1d3557" />
+  <ellipse cx="120" cy="75" rx="5" ry="7" fill="#1d3557" />
+  
+  <!-- الحاجبان -->
+  <path d="M70,60 Q80,55 90,60" stroke="#1d3557" stroke-width="2" fill="none" />
+  <path d="M110,60 Q120,55 130,60" stroke="#1d3557" stroke-width="2" fill="none" />
+  
+  <!-- الأنف -->
+  <path d="M100,80 L95,95 L105,95 Z" fill="#1d3557" />
+  
+  <!-- الفم -->
+  <path d="M80,110 Q100,120 120,110" stroke="#1d3557" stroke-width="2" fill="none" />
+  
+  <!-- الشعر (أنثوي) -->
+  <path d="M50,85 C50,35 150,35 150,85" fill="#1d3557" />
+  <path d="M50,85 C60,55 140,55 150,85" fill="#1d3557" />
+  <path d="M50,85 C50,95 50,115 60,135" fill="#1d3557" />
+  <path d="M150,85 C150,95 150,115 140,135" fill="#1d3557" />
+  
+  <!-- الرقبة -->
+  <rect x="85" y="135" width="30" height="20" fill="#a8dadc" />
+  
+  <!-- الملابس (أنثوي) -->
+  <path d="M60,155 L85,135 L115,135 L140,155 L150,200 L50,200 Z" fill="#457b9d" />
+  
+  <!-- تفاصيل الملابس -->
+  <path d="M85,135 L85,200" stroke="#1d3557" stroke-width="2" />
+  <path d="M115,135 L115,200" stroke="#1d3557" stroke-width="2" />
+  
+  <!-- قلادة -->
+  <path d="M95,145 Q100,155 105,145" stroke="#e63946" stroke-width="2" fill="none" />
+  <circle cx="100" cy="155" r="3" fill="#e63946" />
+  
+  <!-- أقراط -->
+  <circle cx="55" cy="85" r="3" fill="#e63946" />
+  <circle cx="145" cy="85" r="3" fill="#e63946" />
+</svg>

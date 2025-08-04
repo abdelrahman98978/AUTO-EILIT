@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- خلفية متدرجة -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d3557;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#457b9d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- خلفية الصورة -->
+  <rect width="1200" height="800" fill="url(#grad1)" />
+  
+  <!-- أشكال زخرفية -->
+  <circle cx="200" cy="150" r="80" fill="#a8dadc" opacity="0.3" />
+  <circle cx="1000" cy="650" r="120" fill="#a8dadc" opacity="0.2" />
+  <circle cx="600" cy="400" r="200" fill="#e63946" opacity="0.1" />
+  
+  <!-- خطوط زخرفية -->
+  <path d="M0,200 Q600,250 1200,150" stroke="#f1faee" stroke-width="2" fill="none" opacity="0.2" />
+  <path d="M0,400 Q600,450 1200,350" stroke="#f1faee" stroke-width="2" fill="none" opacity="0.2" />
+  <path d="M0,600 Q600,650 1200,550" stroke="#f1faee" stroke-width="2" fill="none" opacity="0.2" />
+  
+  <!-- رسم تخطيطي لسيارة فاخرة -->
+  <g transform="translate(600, 500) scale(1.5)">
+    <!-- هيكل السيارة -->
+    <path d="M-120,-20 C-100,-40 100,-40 120,-20 L140,0 C140,20 120,40 100,40 L-100,40 C-120,40 -140,20 -140,0 Z" fill="#f1faee" opacity="0.7" />
+    
+    <!-- العجلات -->
+    <circle cx="-80" cy="40" r="20" fill="#333" />
+    <circle cx="80" cy="40" r="20" fill="#333" />
+    
+    <!-- النوافذ -->
+    <path d="M-60,-20 L-40,-35 L40,-35 L60,-20 Z" fill="#a8dadc" opacity="0.8" />
+    
+    <!-- التفاصيل -->
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#333" stroke-width="1" />
+    <line x1="-100" y1="20" x2="100" y2="20" stroke="#333" stroke-width="1" />
+  </g>
+</svg>

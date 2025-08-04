@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- خلفية -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- سيارة مرسيدس S-Class -->
+  <g transform="translate(300, 220) scale(1.8)">
+    <!-- هيكل السيارة -->
+    <path d="M-120,-20 C-110,-35 110,-35 120,-20 L130,0 C130,20 110,40 90,40 L-90,40 C-110,40 -130,20 -130,0 Z" fill="#333" />
+    
+    <!-- العجلات -->
+    <circle cx="-80" cy="40" r="20" fill="#111" stroke="#777" stroke-width="2" />
+    <circle cx="-80" cy="40" r="10" fill="#333" />
+    <circle cx="80" cy="40" r="20" fill="#111" stroke="#777" stroke-width="2" />
+    <circle cx="80" cy="40" r="10" fill="#333" />
+    
+    <!-- النوافذ -->
+    <path d="M-70,-20 L-50,-32 L50,-32 L70,-20 Z" fill="#a8dadc" opacity="0.8" />
+    
+    <!-- المصابيح الأمامية -->
+    <ellipse cx="-110" cy="-5" rx="15" ry="8" fill="#f1faee" opacity="0.9" />
+    <ellipse cx="110" cy="-5" rx="15" ry="8" fill="#f1faee" opacity="0.9" />
+    
+    <!-- شعار مرسيدس -->
+    <circle cx="0" cy="-10" r="12" fill="#f1faee" stroke="#333" stroke-width="1" />
+    <path d="M0,-18 L0,-2 M-8,-10 L8,-10 M-6,-16 L6,-4 M6,-16 L-6,-4" stroke="#333" stroke-width="1.5" />
+    
+    <!-- التفاصيل -->
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#555" stroke-width="1" />
+    <line x1="-100" y1="20" x2="100" y2="20" stroke="#555" stroke-width="1" />
+    <rect x="-40" y="25" width="80" height="10" fill="#222" />
+  </g>
+  
+  <!-- نص المعلومات -->
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#1d3557" font-weight="bold">مرسيدس S-Class</text>
+</svg>
